@@ -1,0 +1,130 @@
+body {
+  margin: 0;
+  background: #eceae0;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  color: #221e1d;
+  margin: 0 50px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  white-space: nowrap;
+  align-self: center;
+}
+
+.form-group__text {
+  margin: 0;
+}
+
+.form-group {
+  display: flex;
+  align-items: flex-end;
+}
+
+.block__where-spent {
+  display: flex;
+  flex-direction: column;
+  min-width: 50vw;
+  margin-right: 10px;
+}
+
+.form-group__input {
+  height: 30px;
+  color: black;
+  min-width: 30vw;
+}
+
+.block__how-much-spent {
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+}
+
+.form-group__button {
+  height: 36px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.cost-container {
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.cost-text {
+  margin: 0 15px 0 0;
+  min-width: 50vw;
+  white-space: nowrap;
+}
+
+.cost-date {
+  margin: 0 15px 0 0;
+  min-width: 20vw;
+  white-space: nowrap;
+}
+
+.cost-number {
+  min-width: 10vw;
+  white-space: nowrap;
+  margin: 0;
+}
+
+.sum-container {
+  display: flex;
+  font-size: 25px;
+  max-width: 85vw;
+  justify-content: right;
+  margin: 10px 0;
+}
+
+.img-button {
+  width: 25px;
+}
+
+.container-replace {
+  display: flex;
+}
+
+.mini-block {
+  display: flex;
+}
+
+@media (max-width: 960px) {
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form-group__button {
+    margin-top: 10px;
+    width: 200px;
+  }
+
+  .mini-block {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .block__how-much-spent {
+    width: 100%;
+  }
+
+  .block__where-spent {
+    width: 100%;
+  }
+
+  .cost-text {
+    flex-grow: 1;
+  }
+}

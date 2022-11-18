@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Учёт расходов</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <div class="flex-container">
+      <div class="wrapper">
+        <h1 class="title">Учет моих расходов</h1>
+        <div class="form-group">
+          <div class="block__where-spent">
+            <p class="form-group__text">Куда было потрачено</p>
+            <input
+              type="text"
+              id="where-spent"
+              class="form-group__input"
+              placeholder="Куда было потрачено"
+            />
+          </div>
+          <div class="block__how-much-spent">
+            <p class="form-group__text">Сколько было потрачено</p>
+            <input
+              type="number"
+              id="how-much-spent"
+              class="form-group__input"
+              placeholder="Сколько было потрачено"
+            />
+          </div>
+          <button onclick="addCost()" class="form-group__button">
+            Добавить
+          </button>
+        </div>
+      </div>
+      <div id="content-page" class="content"></div>
+    </div>
+  </body>
+</html>
